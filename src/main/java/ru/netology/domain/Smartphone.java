@@ -14,9 +14,8 @@ public class Smartphone extends Product {
         return manufacturer;
     }
 
-    public Smartphone setManufacturer(String manufacturer) {
+    public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
-        return this;
     }
 
 
