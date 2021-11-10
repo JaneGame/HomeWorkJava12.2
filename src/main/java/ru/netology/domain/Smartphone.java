@@ -18,6 +18,16 @@ public class Smartphone extends Product {
         this.manufacturer = manufacturer;
     }
 
+    public boolean matches(String search) {
+        if (super.matches(search)) {
+            return true;
+        }
+        if (getManufacturer().contains(search)) { // проверим есть ли поисковое слово в данных об авторе
+            return true;
+        }
+        return false;
+    }
+
 
 }
 
