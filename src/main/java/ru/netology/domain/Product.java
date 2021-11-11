@@ -1,8 +1,8 @@
 package ru.netology.domain;
 
-import ru.netology.repository.ProductRepository;
+//import ru.netology.repository.ProductRepository;
 
-import java.util.Objects;
+//import java.util.Objects;
 
 public class Product {
     private int id;
@@ -18,10 +18,10 @@ public class Product {
         this.price = price;
     }
 
-    ProductRepository repo = new ProductRepository();
+    //ProductRepository repo = new ProductRepository();
 
-    public boolean matches(String name){
-        if (getName().contains(name)) {
+    public boolean matches(String search){
+        if (name.contains(search)) {
             return true;
         }
         return false;
