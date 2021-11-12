@@ -18,9 +18,8 @@ public class Product {
         this.price = price;
     }
 
-    //ProductRepository repo = new ProductRepository();
 
-    public boolean matches(String search){
+    public boolean matches(String search) {
         if (name.contains(search)) {
             return true;
         }

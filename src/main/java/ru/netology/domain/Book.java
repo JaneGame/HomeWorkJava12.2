@@ -1,15 +1,15 @@
 package ru.netology.domain;
 
-import java.util.Objects;
 
 public class Book extends Product {
     private String author;
 
+    @Override
     public boolean matches(String search) {
         if (super.matches(search)) {
             return true;
         }
-        if (author.contains(search)) { // проверим есть ли поисковое слово в данных об авторе
+        if (author.contains(search)) {
             return true;
         }
         return false;
