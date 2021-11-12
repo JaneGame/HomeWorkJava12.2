@@ -1,6 +1,8 @@
 package ru.netology.domain;
 
-import java.util.Objects;
+//import ru.netology.repository.ProductRepository;
+
+//import java.util.Objects;
 
 public class Product {
     private int id;
@@ -16,6 +18,14 @@ public class Product {
         this.price = price;
     }
 
+
+    public boolean matches(String search) {
+        if (name.contains(search)) {
+            return true;
+        }
+        return false;
+    }
+
     public int getId() {
         return id;
     }
@@ -29,8 +39,6 @@ public class Product {
     public void setPrice(int price) {
         this.price = price;
     }
+
 }
-
-
-
 

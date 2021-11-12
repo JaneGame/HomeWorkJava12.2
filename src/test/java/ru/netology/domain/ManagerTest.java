@@ -14,7 +14,7 @@ class ManagerTest {
     Book grace = new Book(1, "java", 100, "grace");
     Smartphone apple = new Smartphone(2, "MIA2", 1000, "apple");
     Book gracer = new Book(3, "java", 100, "grace");
-    Product radio = new Product();
+    Product radio = new Product(8, "radio", 800);
     Book HP1 = new Book(4, "HP1", 100, "JR");
     Book HP2 = new Book(5, "HP2", 100, "JR");
     Smartphone samsung = new Smartphone(6, "smart", 1000, "samsung");
